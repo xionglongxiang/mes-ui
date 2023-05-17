@@ -1,6 +1,6 @@
 {
   "name": "@xlx-ui/components",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "access": "publish",
   "description": "all components are settled here",
   "main": "index.ts",
