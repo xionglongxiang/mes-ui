@@ -1,6 +1,6 @@
 {
   "name": "@xlx-ui/components",
-  "version": "0.0.2",
+  "version": "0.0.7",
   "access": "publish",
   "description": "all components are settled here",
   "main": "index.ts",
@@ -14,6 +14,8 @@
   "sideEffects": false,
   "gitHead": "c69724230befa8fede0e6b9c37fb0b7e39fd7cdd",
   "dependencies": {
+    "eslint": "^8.40.0",
+    "less": "^4.1.3",
     "less-loader": "^11.1.0"
   }
 }
