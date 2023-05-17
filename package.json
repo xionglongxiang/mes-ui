@@ -1,15 +1,20 @@
 {
   "name": "@xlx-ui/components",
-  "version": "0.0.9",
+  "version": "0.0.24",
   "type": "module",
-  "main": "./mes-ui/index.ts",
-  "module": "./mes-ui/index.ts",
+  "main": "./lib/index.mjs",
+  "module": "./lib/index.mjs",
+  "files": [
+    "lib",
+    "es",
+    "global.d.ts"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "build:components": "cd src && yarn build",
-    "lib": "yarn build:components",
+    "build:components": "cd packages && yarn build",
+    "lib": "yarn run build:components",
     "docs:dev": "pnpm run -C docs dev",
     "docs:build": "pnpm run -C docs build",
     "docs:serve": "pnpm run -C docs serve"
