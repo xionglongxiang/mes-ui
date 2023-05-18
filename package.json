@@ -1,6 +1,6 @@
 {
   "name": "@xlx-ui/components",
-  "version": "0.0.26",
+  "version": "0.0.27",
   "type": "module",
   "main": "./lib/index.mjs",
   "module": "./lib/index.mjs",
@@ -13,6 +13,7 @@
     "dev": "vite",
     "build": "cd ./packages;node ./scripts/build.js --emptyOutDir",
     "preview": "vite preview",
+    "bp": "yarn build && npm publish",
     "build:components": "cd packages && yarn build",
     "lib": "yarn run build:components",
     "docs:dev": "pnpm run -C docs dev",
