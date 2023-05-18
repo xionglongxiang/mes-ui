@@ -1,6 +1,6 @@
 {
   "name": "@xlx-ui/components",
-  "version": "0.0.31",
+  "version": "0.0.32",
   "type": "module",
   "main": "./lib/index",
   "module": "./lib/index",
@@ -26,8 +26,7 @@
     "element-plus": "^2.3.4",
     "rimraf": "^5.0.0",
     "sass": "1.43.2",
-    "sass-loader": "12.2.0",
-    "vue": "^3.2.47"
+    "sass-loader": "12.2.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
