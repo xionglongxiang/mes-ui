@@ -1,6 +1,6 @@
 {
   "name": "@xlx-ui/components",
-  "version": "0.0.32",
+  "version": "0.0.33",
   "type": "module",
   "main": "./lib/index",
   "module": "./lib/index",
