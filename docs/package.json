@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "vitepress dev .",
+    "build": "NODE_ENV=production && vitepress build . && tsx .vitepress/build/rebuild-pwa.ts",
+    "serve": "NODE_ENV=production vitepress serve . --port 5001",
+    "crowdin-credentials": "tsx .vitepress/build/crowdin-credentials.ts"
+  },
+  "dependencies": {
+    "@xlx-ui/components": "^0.0.33",
+    "typescript": "^5.0.4",
+    "vitepress": "^1.0.0-alpha.75"
+  }
+}
