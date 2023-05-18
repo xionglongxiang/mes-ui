@@ -1,5 +1,5 @@
 <template>
-  <button class="demo-button">
+  <button class="demo-button" :style="'color:' + color">
     <slot />
   </button>
 </template>
@@ -7,7 +7,6 @@
 <script lang="ts">
 export default {
   name: "demo-button",
-
   props: {
     color: String,
     type: {

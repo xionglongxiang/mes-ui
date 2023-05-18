@@ -12,7 +12,7 @@ import {
 } from "./chunk-LBEWQFSH.js";
 
 // node_modules/@xlx-ui/components/lib/index.mjs
-var g = {
+var y = {
   name: "demo-button",
   props: {
     color: String,
@@ -22,20 +22,23 @@ var g = {
     }
   }
 };
-var v = (n, e) => {
-  const t = n.__vccOpts || n;
-  for (const [r, o] of e)
-    t[r] = o;
-  return t;
+var $ = (e, t) => {
+  const n = e.__vccOpts || e;
+  for (const [o, r] of t)
+    n[o] = r;
+  return n;
 };
-var y = { class: "demo-button" };
-function $(n, e, t, r, o, s) {
-  return openBlock(), createElementBlock("button", y, [
-    renderSlot(n.$slots, "default")
+var b = { class: "demo-button" };
+function x(e, t, n, o, r, c) {
+  return openBlock(), createElementBlock("button", b, [
+    renderSlot(e.$slots, "default")
   ]);
 }
-var x = v(g, [["render", $]]);
-var B = defineComponent({
+var s = $(y, [["render", x]]);
+s.install = function(e) {
+  e.component("demo-button", s);
+};
+var a = defineComponent({
   __name: "index",
   props: {
     // 进度条进度
@@ -54,24 +57,37 @@ var B = defineComponent({
       default: 3e3
     }
   },
-  setup(n) {
-    const e = n;
+  setup(e) {
+    const t = e;
     ref(0);
-    let t = ref(0);
+    let n = ref(0);
     return onMounted(() => {
-      if (e.isAnimate) {
-        let r = Math.ceil(e.time / e.percentage), o = setInterval(() => {
-          t.value += 1, t.value >= e.percentage && (t.value = e.percentage, clearInterval(o));
-        }, r);
+      if (t.isAnimate) {
+        let o = Math.ceil(t.time / t.percentage), r = setInterval(() => {
+          n.value += 1, n.value >= t.percentage && (n.value = t.percentage, clearInterval(r));
+        }, o);
       }
-    }), (r, o) => {
-      const s = resolveComponent("el-progress");
-      return openBlock(), createBlock(s, mergeProps({ percentage: unref(t) }, r.$attrs), null, 16, ["percentage"]);
+    }), (o, r) => {
+      const c = resolveComponent("el-progress");
+      return openBlock(), createBlock(c, mergeProps({ percentage: unref(n) }, o.$attrs), null, 16, ["percentage"]);
     };
   }
 });
+a.install = function(e) {
+  e.component("progress", a);
+};
+var h = [s, a];
+var k = {
+  install(e) {
+    h.forEach((t) => {
+      e.use(t.install);
+    });
+  },
+  version: "0.1.0"
+};
 export {
-  x as DemoButton,
-  B as progress
+  s as DemoButton,
+  k as default,
+  a as progress
 };
 //# sourceMappingURL=@xlx-ui_components.js.map
