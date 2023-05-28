@@ -1,23 +1,13 @@
 {
-  "hash": "b73609d1",
-  "browserHash": "94460cfe",
+  "hash": "9543575b",
+  "browserHash": "d98669ea",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "b49b620a",
-      "needsInterop": false
-    },
-    "@xlx-ui/components": {
-      "src": "../../../node_modules/@xlx-ui/components/lib/index.mjs",
-      "file": "@xlx-ui_components.js",
-      "fileHash": "ca16badf",
+      "fileHash": "21a279ec",
       "needsInterop": false
     }
   },
-  "chunks": {
-    "chunk-LBEWQFSH": {
-      "file": "chunk-LBEWQFSH.js"
-    }
-  }
+  "chunks": {}
 }

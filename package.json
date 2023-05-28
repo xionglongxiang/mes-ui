@@ -16,9 +16,10 @@
     "bp": "yarn build && npm publish",
     "build:components": "cd packages && yarn build",
     "lib": "yarn run build:components",
-    "docs:dev": "pnpm run -C docs dev",
-    "docs:build": "pnpm run -C docs build",
-    "docs:serve": "pnpm run -C docs serve"
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "pnpm run -C docs serve",
+    "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
     "@element-plus/icons": "^0.0.11",
