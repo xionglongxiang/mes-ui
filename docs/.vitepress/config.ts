@@ -2,31 +2,44 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "mes-ui",
   description: "this is home page of mes-ui",
   themeConfig: {
+    siteTitle: "",
+    logo: "../logo.png",
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "首页", link: "/" },
-      { text: "组件文档", link: "/markdown-examples" },
+      { text: "组件文档", link: "/introduction/quick-start" },
+      { text: "组件需求", link: "https://www.yuque.com/u33828756/chbl2o" },
     ],
 
     sidebar: [
       {
-        text: "Examples",
+        text: "基础",
         items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
-          { text: "test", link: "/test" },
+          { text: "快速开始", link: "/introduction/quick-start" },
+          { text: "问题列表", link: "/introduction/questions" },
+          { text: "设计思路", link: "/introduction/design" },
         ],
       },
+
       {
-        text: "基础",
-        items: [{ text: "快速开始", link: "/introduction/quick-start" }],
+        text: "Basic 基础组件",
+        items: [{ text: "Button", link: "/components/Button" }],
       },
       {
         text: "Utils 工具函数",
-        items: [{ text: "word parseer", link: "/utils/index" }],
+        items: [
+          { text: "word parseer", link: "/utils/index" },
+          { text: "cookie", link: "/utils/cookie" },
+        ],
+      },
+      {
+        text: "文档辅助",
+        items: [
+          { text: "文档编写案例", link: "/markdown-examples" },
+          { text: "test", link: "/test" },
+        ],
       },
     ],
 

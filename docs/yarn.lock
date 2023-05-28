@@ -483,10 +483,10 @@
   dependencies:
     vue-demi "*"
 
-"@xlx-ui/components@^0.0.36":
-  version "0.0.36"
-  resolved "https://registry.npmjs.org/@xlx-ui/components/-/components-0.0.36.tgz#e2168514d8cad45afd19d6d37266c521e68e6cbe"
-  integrity sha512-ID0NGk5ZdUuHIM0Q2VfC1vmCl511q9zgl2mGb5hm/aENQ1RMQyI3D+Q832i/erutdslHHdQMYtpjmcfbjaGKnA==
+"@xlx-ui/components@^0.0.49":
+  version "0.0.49"
+  resolved "https://registry.npmjs.org/@xlx-ui/components/-/components-0.0.49.tgz#6eff05e16feeb812fb9e71ae6f14cbac8c0aa414"
+  integrity sha512-958D+11Pk78YOsWfnARzA+yV7IeM0YWxNUOfia76LX5uMSvu7vQ6kNmcsMFjeS4xxUStI2inFarpXgpcmm9I8w==
   dependencies:
     "@element-plus/icons" "^0.0.11"
     "@element-plus/icons-vue" "^2.1.0"

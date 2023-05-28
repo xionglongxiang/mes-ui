@@ -1,5 +1,9 @@
-import { ElButton } from "element-plus";
+import { buttonProps, ElButton } from "element-plus";
 
 import withInstall from "../../utils/withInstall";
 
-export default withInstall(ElButton);
+const Button = withInstall(ElButton);
+export default Button;
+
+console.log("el", buttonProps);
+console.log("ElButton", ElButton);

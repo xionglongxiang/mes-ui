@@ -1,4 +1,13 @@
 export default (comp: any, compName?: string) => {
+  for (let key in comp) {
+    if (/[A-Z]/.test(key[0])) {
+      comp[key].name = comp[key].name.replace("El", "M");
+    }
+  }
+
+  if (!comp.name.includes("El")) {
+    return comp;
+  }
   if (comp.name) {
     comp.name = comp.name.replace("El", "M");
   }

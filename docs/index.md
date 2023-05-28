@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /quick-start
+      link: /introduction/quick-start
     - theme: alt
       text: 组件文档
-      link: /api-examples
+      link: "/introduction/quick-start"
 
 features:
   - title: 基于vue3
