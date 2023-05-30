@@ -1,16 +1,21 @@
-import { App } from "vue";
+import { App } from 'vue';
 
-import Button from "./Button";
-import Dialog from "./Dialog";
-import Drawer from "./Drawer";
-import Input from "./Input";
-import Message from "./Message";
-import MessageBox from "./MessageBox";
-import Notification from "./Notification";
-import Popconfirm from "./Popconfirm";
+import Button from './Basic/Button';
+import DatePicker from './Basic/DatePicker';
+import Dialog from './Basic/Dialog';
+import Drawer from './Basic/Drawer';
+import Input from './Basic/Input';
+import Message from './Basic/Message';
+import MessageBox from './Basic/MessageBox';
+import Notification from './Basic/Notification';
+import Popconfirm from './Basic/Popconfirm';
+import Table from './Basic/Table';
+import Tag from './Basic/Tag';
+import Upload from './Basic/Upload';
 
 export {
   Button,
+  DatePicker,
   Dialog,
   Drawer,
   Input,
@@ -18,9 +23,12 @@ export {
   MessageBox,
   Notification,
   Popconfirm,
+  Table,
+  Tag,
+  Upload,
 };
 
-export * from "./utils/cookie";
+export * from "./Utils/Cookie";
 
 const components = [
   Button,
@@ -31,6 +39,10 @@ const components = [
   Message,
   MessageBox,
   Notification,
+  Tag,
+  Table,
+  Upload,
+  DatePicker,
 ];
 
 export default {
