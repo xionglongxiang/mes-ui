@@ -1,6 +1,7 @@
 import { App } from 'vue';
 
-import Button from './Basic/Button';
+import Alert from './Alert';
+import MButton from './Basic/Button';
 import DatePicker from './Basic/DatePicker';
 import Dialog from './Basic/Dialog';
 import Drawer from './Basic/Drawer';
@@ -12,9 +13,10 @@ import Popconfirm from './Basic/Popconfirm';
 import Table from './Basic/Table';
 import Tag from './Basic/Tag';
 import Upload from './Basic/Upload';
+import MDemo1 from './Example/MDemo1'
 
 export {
-  Button,
+  MButton,
   DatePicker,
   Dialog,
   Drawer,
@@ -26,12 +28,11 @@ export {
   Table,
   Tag,
   Upload,
+  MDemo1
 };
 
-export * from "./Utils/Cookie";
-
 const components = [
-  Button,
+  MButton,
   Popconfirm,
   Input,
   Dialog,
@@ -43,6 +44,7 @@ const components = [
   Table,
   Upload,
   DatePicker,
+  MDemo1
 ];
 
 export default {

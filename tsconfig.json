@@ -9,7 +9,7 @@
     "outDir": "ui/types",
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "emitDeclarationOnly": true,
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
@@ -28,7 +28,8 @@
     "packages/**/*.d.ts",
     "packages/**/*.tsx",
     "packages/**/*.vue",
-    "index.d.ts"
+    "types/*"
   ],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "exclude": ["node_modules"],
+  "references": [{ "path": "./tsconfig.node.json" }, { "path": "./tsconfig.vitest.json" }]
 }

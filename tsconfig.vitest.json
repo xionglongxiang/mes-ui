@@ -1,0 +1,11 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "composite": true,
+      "lib": ["ES2021", "DOM", "DOM.Iterable"],
+      "types": ["node", "jsdom", "vitest/globals"],
+      "skipLibCheck": true
+    },
+    "include": ["packages", "types/index.d.ts"],
+    "exclude": ["node_modules", "lib", "docs"]
+  }
