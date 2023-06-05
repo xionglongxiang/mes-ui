@@ -1,57 +1,65 @@
 import { App } from 'vue';
 
-import Alert from './Alert';
-import MButton from './Basic/Button';
-import DatePicker from './Basic/DatePicker';
-import Dialog from './Basic/Dialog';
-import Drawer from './Basic/Drawer';
-import Input from './Basic/Input';
-import Message from './Basic/Message';
-import MessageBox from './Basic/MessageBox';
-import Notification from './Basic/Notification';
-import Popconfirm from './Basic/Popconfirm';
-import Table from './Basic/Table';
-import Tag from './Basic/Tag';
-import Upload from './Basic/Upload';
-import MDemo1 from './Example/MDemo1'
+import MAlert from './Basic/MAlert';
+import MButton from './Basic/MButton';
+import MDatePicker from './Basic/MDatePicker';
+import MDialog from './Basic/MDialog';
+import MDrawer from './Basic/MDrawer';
+import MInput from './Basic/MInput';
+import MSelect from './Basic/MSelect'
+import MMessage from './Basic/MMessage';
+import MMessageBox from './Basic/MMessageBox';
+import MNotification from './Basic/MNotification';
+import MPopconfirm from './Basic/MPopconfirm';
+import MTable from './Basic/MTable';
+import MTag from './Basic/MTag';
+import MUpload from './Basic/MUpload';
+import MTestTitle from './Example/MTestTitle'
+import MTestCard from './Example/MTestCard'
 
 export {
+  MAlert,
   MButton,
-  DatePicker,
-  Dialog,
-  Drawer,
-  Input,
-  Message,
-  MessageBox,
-  Notification,
-  Popconfirm,
-  Table,
-  Tag,
-  Upload,
-  MDemo1
+  MDatePicker,
+  MDialog,
+  MDrawer,
+  MInput,
+  MSelect,
+  MMessage,
+  MMessageBox,
+  MNotification,
+  MPopconfirm,
+  MTable,
+  MTag,
+  MUpload,
+  MTestTitle,
+  MTestCard
 };
 
 const components = [
+  MAlert,
   MButton,
-  Popconfirm,
-  Input,
-  Dialog,
-  Drawer,
-  Message,
-  MessageBox,
-  Notification,
-  Tag,
-  Table,
-  Upload,
-  DatePicker,
-  MDemo1
+  MPopconfirm,
+  MInput,
+  MSelect,
+  MDialog,
+  MDrawer,
+  MMessage,
+  MMessageBox,
+  MNotification,
+  MTag,
+  MTable,
+  MUpload,
+  MDatePicker,
+  MTestTitle,
+  MTestCard
 ];
 
 export default {
   install(app: App) {
     components.forEach((item: any) => {
-      app.use(item);
+      app.use(item)
     });
   },
   version: "0.0.42",
-};
+ } as const;

@@ -1,9 +1,10 @@
 {
     "extends": "../../tsconfig.json",
     "include": [
-        "./Basic/**/*.ts",
-        "./Test/**/*.ts",
-        "./index.ts"
+        "./**/*",
+        "./**/**/**/*.spec.ts",
+        "./index.ts",
+        "../../types/vue.shim.d.ts"
     ],
     "exclude": ["node_modules"]
 }

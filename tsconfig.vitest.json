@@ -8,4 +8,4 @@
     },
     "include": ["packages", "types/index.d.ts"],
     "exclude": ["node_modules", "lib", "docs"]
-  }
+}

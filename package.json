@@ -11,7 +11,7 @@
   ],
   "typings": "./types/index.d.ts",
   "scripts": {
-    "dev": "pnpm -C packages/play dev",
+    "dev": "cd ./packages/play && pnpm dev",
     "build": "node ./packages/scripts/build.cjs --emptyOutDir",
     "bp": "pnpm build && npm publish",
     "lib": "pnpm run build:components",
@@ -22,7 +22,8 @@
     "docs:preview": "vitepress preview docs",
     "preinstall": "npx only-allow pnpm",
     "test": "vitest",
-    "test:coverage": "vitest --coverage"
+    "test:coverage": "vitest --coverage",
+    "cc": "node ./packages/scripts/ccomp.cjs"
   },
   "engines": {
     "node": ">=14.19.0"
@@ -43,13 +44,16 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
+    "c8": "^7.11.3",
+    "chalk": "4.1.2",
+    "jsdom": "16.4.0",
     "typescript": "^5.0.2",
     "vite": "^4.3.2",
     "vitepress": "^1.0.0-alpha.75",
+    "vitest": "0.12.6",
     "vue": "^3.3.4",
     "vue-tsc": "^1.4.2",
-    "vitest": "0.12.6",
-    "c8": "^7.11.3",
-    "jsdom": "16.4.0"
+    "vue-router": "^4.0.15",
+    "@vue/test-utils": "^2.0.0"
   }
 }

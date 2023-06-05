@@ -1,15 +1,19 @@
 import "element-plus/dist/index.css";
-
+import router from './router'
 import { createApp } from "vue";
-import ElementPlus from "element-plus";
-
+// import ElementPlus from "element-plus";
 import App from "./App.vue";
 
-import MesComponents, { MDemo1 } from '../../../lib/components'
-console.log(MDemo1, MesComponents, '-> MesComponents');
+// import MesComponents, { MSelect } from '../../../lib/components' // build
+import MesComponents, { MSelect } from '@packages/components' // dev
+// console.log(MSelect, '-> MSelect');
 
+export const app = createApp(App);
 
-const app = createApp(App);
+app
+.use(router)
+.use(MesComponents);
 
-app.use(MesComponents);
 app.mount("#app");
+console.log(app._context.components, '-> app._context.components');
+
